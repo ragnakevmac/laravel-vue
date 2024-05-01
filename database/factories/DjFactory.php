@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Requests>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Djs>
  */
-class RequestsFactory extends Factory
+class DjFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,8 +17,7 @@ class RequestsFactory extends Factory
     public function definition(): array
     {
         return [
-            'status' => 'pending',
-            'status' => '',
+            'name' => fake()->name()
         ];
     }
 }

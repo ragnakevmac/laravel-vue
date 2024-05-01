@@ -5,9 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Requests extends Model
+class Dj extends Model
 {
+
     use HasFactory;
 
-    protected $fillable = ['status', 'comment'];
+    protected $fillable = ['name'];
+
+    public function requests()
+    {
+        return $this->hasMany(Request::class);
+    }
 }

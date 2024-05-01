@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use App\Models\Djs;
+use App\Models\Dj;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -17,8 +17,8 @@ Route::get('/', function () {
 
 Route::get('/djs', function () {
     // dd(Djs::all());
-    return Inertia::render('Djs', [
-        'djs' => Djs::all(),
+    return Inertia::render('DjVueFile', [
+        'djs' => Dj::all(),
     ]);
 });
 
