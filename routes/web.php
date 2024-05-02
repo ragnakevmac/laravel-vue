@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Models\Dj;
+use App\Models\User;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -19,6 +20,13 @@ Route::get('/djs', function () {
     // dd(Djs::all());
     return Inertia::render('DjVueFile', [
         'djs' => Dj::all(),
+    ]);
+});
+
+Route::get('/users', function () {
+    // dd(Djs::all());
+    return Inertia::render('UserVueFile', [
+        'users' => User::all(),
     ]);
 });
 
