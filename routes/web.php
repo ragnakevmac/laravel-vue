@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Artist;
 use App\Models\Dj;
 use App\Models\User;
 use Illuminate\Foundation\Application;
@@ -17,16 +18,20 @@ Route::get('/', function () {
 });
 
 Route::get('/djs', function () {
-    // dd(Djs::all());
     return Inertia::render('DjVueFile', [
         'djs' => Dj::all(),
     ]);
 });
 
 Route::get('/users', function () {
-    // dd(Djs::all());
     return Inertia::render('UserVueFile', [
         'users' => User::all(),
+    ]);
+});
+
+Route::get('/artists', function () {
+    return Inertia::render('ArtistVueFile', [
+        'artists' => Artist::all(),
     ]);
 });
 
