@@ -11,13 +11,10 @@ class Artist extends Model
 
     protected $fillable = ['name'];
 
-    public function artist_songs()
-    {
-        return $this->hasMany(ArtistSong::class);
-    }
-
     public function songs()
     {
-        return $this->belongsToMany(Song::class);
+        // Define the relationship with Song using belongsToMany and specify the pivot table
+        return $this->belongsToMany(Song::class, 'artist_song')
+            ->withTimestamps(); // Add this if your pivot table includes timestamps
     }
 }

@@ -12,12 +12,17 @@ return new class extends Migration
 
     public function up(): void
     {
-        Schema::create('artist_songs', function (Blueprint $table) {
+        Schema::create('artist_song', function (Blueprint $table) {
             $table->id();
 
             // Create foreign ID columns properly and define foreign key constraints
-            $table->foreignId('song_id')->constrained('songs')->onDelete('cascade');
-            $table->foreignId('artist_id')->constrained('artists')->onDelete('cascade');
+            // $table->foreignId('song_id')->constrained('songs')->onDelete('cascade');
+            // $table->foreignId('artist_id')->constrained('artists')->onDelete('cascade');
+
+            $table->foreignIdFor(App\Models\Artist::class)->constrained()->cascadeOnDelete();
+            $table->foreignIdFor(App\Models\Song::class)->constrained()->cascadeOnDelete();
+
+
 
             $table->timestamps();
         });
@@ -28,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('artist_songs');
+        Schema::dropIfExists('artist_song');
     }
 };

@@ -13,16 +13,16 @@ class Request extends Model
 
     public function users()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 
     public function djs()
     {
-        return $this->belongsTo(Dj::class);
+        return $this->belongsTo(Dj::class, 'dj_id');
     }
 
-    public function artist_songs()
+    public function artist_song()
     {
-        return $this->belongsTo(ArtistSong::class);
+        return $this->belongsTo(ArtistSong::class, 'artist_song_id');
     }
 }
