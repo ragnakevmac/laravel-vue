@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RequestController;
 use App\Models\Artist;
 use App\Models\Dj;
 use App\Models\Song;
@@ -45,29 +46,10 @@ Route::get('/artists', function () {
     ]);
 });
 
-Route::get('/requests', function () {
 
-    $requests = Request::with(['users', 'artist_song.songs'])->get();
+Route::get('/requests', [RequestController::class, 'index'])->name('requests.index');
+Route::post('/requests', [RequestController::class, 'store'])->name('requests.store');
 
-    // foreach ($requests as $request) {
-    //     echo 'Request ID: ' . $request->id . '<br>';
-    //     echo 'Username: ' . ($request->users ? $request->users->username : 'No User') . '<br>';
-    //     echo 'Song Name: ' . ($request->artist_song && $request->artist_song->songs ? $request->artist_song->songs->name : 'No Song') . '<br>';
-    //     echo '<hr>';
-    // }
-
-    // $requests2 = DB::table('requests')
-    //     ->join('users', 'users.id', '=', 'requests.user_id')
-    //     ->join('artist_song', 'artist_song.id', '=', 'requests.artist_song_id')
-    //     ->join('songs', 'songs.id', '=', 'artist_song.song_id')
-    //     ->select('requests.*', 'users.username', 'songs.name')
-    //     ->get();
-
-
-    return Inertia::render('RequestVueFile', [
-        'requests' => $requests,
-    ]);
-});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

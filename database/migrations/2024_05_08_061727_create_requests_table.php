@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('requests', function (Blueprint $table) {
             $table->id();
-            $table->string('status');
+            $table->string('status')->default('pending');
             $table->text('comment');
 
             // Create foreign ID columns and ensure naming is consistent
-            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
-            $table->foreignId('dj_id')->constrained('djs')->onDelete('cascade');
-            $table->foreignId('artist_song_id')->constrained('artist_song')->onDelete('cascade');
+            $table->foreignId('user_id')->default(1)->constrained('users')->onDelete('cascade');
+            $table->foreignId('dj_id')->default(1)->constrained('djs')->onDelete('cascade');
+            $table->foreignId('artist_song_id')->default(1)->constrained('artist_song')->onDelete('cascade');
 
             $table->timestamps();
         });
