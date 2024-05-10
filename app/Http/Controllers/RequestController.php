@@ -44,7 +44,7 @@ class RequestController extends Controller
         ModelRequest::create($apiRequest->all());
 
         // Redirect using Inertia's response to prevent a full page reload
-        return redirect()->route('requests.index')->with('message', 'Comment added successfully!');
+        return redirect()->back()->with('success', 'Comment posted.');
     }
 
     /**

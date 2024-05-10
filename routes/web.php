@@ -12,6 +12,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
+use App\Http\Middleware\HandleInertiaRequests;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -47,8 +48,12 @@ Route::get('/artists', function () {
 });
 
 
-Route::get('/requests', [RequestController::class, 'index'])->name('requests.index');
-Route::post('/requests', [RequestController::class, 'store'])->name('requests.store');
+
+
+Route::middleware([HandleInertiaRequests::class])->group(function () {
+    Route::get('/requests', [RequestController::class, 'index'])->name('requests.index');
+    Route::post('/requests', [RequestController::class, 'store'])->name('requests.store');
+});
 
 
 Route::get('/dashboard', function () {
