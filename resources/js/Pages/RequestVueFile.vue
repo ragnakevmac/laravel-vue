@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
-import { useForm } from "@inertiajs/inertia-vue3";
+import { useForm, usePage } from "@inertiajs/inertia-vue3";
+import { Inertia } from "@inertiajs/inertia";
 
 const props = defineProps({
     requests: Array,
@@ -13,10 +14,20 @@ const form = useForm({
 function submit() {
     form.post("/requests", {
         onSuccess: () => {
-            // Optionally, do something on success, like resetting the form
             form.reset("comment");
         },
     });
+}
+
+function deleteComment(id) {
+    if (confirm("Are you sure you want to delete this comment?")) {
+        Inertia.delete(`/requests/${id}`, {
+            onSuccess: () => {
+                // Optionally, do something on success
+                console.log(`Comment with id ${id} deleted`);
+            },
+        });
+    }
 }
 </script>
 
@@ -38,7 +49,8 @@ function submit() {
         </form>
         <div class="comments-container">
             <div class="comment" v-for="request in requests" :key="request.id">
-                {{ request.comment }}
+                <span class="comment-text">{{ request.comment }}</span>
+                <button class="delete-button" @click="deleteComment(request.id)">Delete</button>
             </div>
         </div>
     </div>
@@ -107,7 +119,32 @@ textarea.comment-box {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    word-wrap: break-word;
     margin-bottom: 10px; /* Add space between comments */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-text {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.delete-button {
+    background-color: #ff4c4c;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #ff3333;
 }
 </style>

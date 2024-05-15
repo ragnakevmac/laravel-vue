@@ -76,6 +76,9 @@ class RequestController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $comment = ModelRequest::findOrFail($id);
+        $comment->delete();
+
+        return redirect()->back()->with('success', 'Comment deleted.');
     }
 }

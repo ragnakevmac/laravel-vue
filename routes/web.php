@@ -53,6 +53,7 @@ Route::get('/artists', function () {
 Route::middleware([HandleInertiaRequests::class])->group(function () {
     Route::get('/requests', [RequestController::class, 'index'])->name('requests.index');
     Route::post('/requests', [RequestController::class, 'store'])->name('requests.store');
+    Route::delete('/requests', [RequestController::class, 'destroy'])->name('requests.destroy');
 });
 
 
