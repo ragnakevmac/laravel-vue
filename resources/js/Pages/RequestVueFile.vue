@@ -29,6 +29,11 @@ function deleteComment(id) {
         });
     }
 }
+
+function editComment(id) {
+    // Logic to edit comment
+    console.log(`Edit comment with id ${id}`);
+}
 </script>
 
 <template>
@@ -50,6 +55,7 @@ function deleteComment(id) {
         <div class="comments-container">
             <div class="comment" v-for="request in requests" :key="request.id">
                 <span class="comment-text">{{ request.comment }}</span>
+                <button class="edit-button" @click="editComment(request.id)">Edit</button>
                 <button class="delete-button" @click="deleteComment(request.id)">Delete</button>
             </div>
         </div>
@@ -133,8 +139,7 @@ textarea.comment-box {
     margin-right: 10px;
 }
 
-.delete-button {
-    background-color: #ff4c4c;
+.edit-button, .delete-button {
     border: none;
     color: white;
     font-size: 14px;
@@ -142,6 +147,19 @@ textarea.comment-box {
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s;
+}
+
+.edit-button {
+    background-color: #ffeb3b; /* Yellow color */
+    margin-right: 5px; /* Add some space between edit and delete buttons */
+}
+
+.edit-button:hover {
+    background-color: #fdd835;
+}
+
+.delete-button {
+    background-color: #ff4c4c;
 }
 
 .delete-button:hover {
