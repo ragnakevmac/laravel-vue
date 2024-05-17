@@ -11,6 +11,13 @@ const form = useForm({
     comment: "",
 });
 
+const editForm = useForm({
+    id: null,
+    comment: "",
+});
+
+const showModal = ref(false);
+
 function submit() {
     form.post("/requests", {
         onSuccess: () => {
@@ -23,7 +30,6 @@ function deleteComment(id) {
     if (confirm("Are you sure you want to delete this comment?")) {
         Inertia.delete(`/requests/${id}`, {
             onSuccess: () => {
-                // Optionally, do something on success
                 console.log(`Comment with id ${id} deleted`);
             },
         });
@@ -31,8 +37,19 @@ function deleteComment(id) {
 }
 
 function editComment(id) {
-    // Logic to edit comment
-    console.log(`Edit comment with id ${id}`);
+    const comment = props.requests.find(request => request.id === id).comment;
+    editForm.id = id;
+    editForm.comment = comment;
+    showModal.value = true;
+}
+
+function updateComment() {
+    Inertia.put(`/requests/${editForm.id}`, { comment: editForm.comment }, {
+        onSuccess: () => {
+            showModal.value = false;
+            editForm.reset();
+        },
+    });
 }
 </script>
 
@@ -59,10 +76,30 @@ function editComment(id) {
                 <button class="delete-button" @click="deleteComment(request.id)">Delete</button>
             </div>
         </div>
+        <div v-if="showModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" @click="showModal = false">&times;</span>
+                <form @submit.prevent="updateComment">
+                    <div class="form-group">
+                        <textarea
+                            v-model="editForm.comment"
+                            class="comment-box"
+                            placeholder="Edit your comment..."
+                        ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="button-container">
+                            <button type="submit" class="styled-button">Update</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </template>
 
 <style scoped>
+/* Existing styles */
 .container {
     display: flex;
     flex-direction: column;
@@ -99,8 +136,8 @@ textarea.comment-box {
 }
 
 .styled-button {
-    width: auto; /* Make the button width auto */
-    padding: 10px 20px; /* Adjust padding to make the button smaller */
+    width: auto;
+    padding: 10px 20px;
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -125,7 +162,7 @@ textarea.comment-box {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px; /* Add space between comments */
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,8 +187,8 @@ textarea.comment-box {
 }
 
 .edit-button {
-    background-color: #ffeb3b; /* Yellow color */
-    margin-right: 5px; /* Add some space between edit and delete buttons */
+    background-color: #ffeb3b;
+    margin-right: 5px;
 }
 
 .edit-button:hover {
@@ -164,5 +201,43 @@ textarea.comment-box {
 
 .delete-button:hover {
     background-color: #ff3333;
+}
+
+/* Modal styles */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-button:hover {
+    color: #000;
 }
 </style>

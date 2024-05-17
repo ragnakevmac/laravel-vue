@@ -43,7 +43,6 @@ class RequestController extends Controller
 
         ModelRequest::create($apiRequest->all());
 
-        // Redirect using Inertia's response to prevent a full page reload
         return redirect()->back()->with('success', 'Comment posted.');
     }
 
@@ -68,7 +67,22 @@ class RequestController extends Controller
      */
     public function update(HttpRequest $apiRequest, string $id)
     {
-        //
+        // Validate the incoming request
+        $apiRequest->validate([
+            'comment' => 'required',
+        ]);
+
+        // Find the comment by ID
+        $comment = ModelRequest::findOrFail($id);
+
+        // Update the comment
+        $comment->comment = $apiRequest->input('comment');
+
+        // Save the updated comment
+        $comment->save();
+
+        // Redirect back with a success message
+        return redirect()->back()->with('success', 'Comment updated.');
     }
 
     /**
