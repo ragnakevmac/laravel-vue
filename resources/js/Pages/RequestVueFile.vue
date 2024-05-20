@@ -57,11 +57,7 @@ function updateComment() {
     <div class="container">
         <form @submit.prevent="submit" class="form">
             <div class="form-group">
-                <textarea
-                    v-model="form.comment"
-                    class="comment-box"
-                    placeholder="Write a comment..."
-                ></textarea>
+                <textarea v-model="form.comment" class="comment-box" placeholder="Write a comment..."></textarea>
             </div>
             <div class="form-group">
                 <div class="button-container">
@@ -69,23 +65,38 @@ function updateComment() {
                 </div>
             </div>
         </form>
-        <div class="comments-container">
-            <div class="comment" v-for="request in requests" :key="request.id">
-                <span class="comment-text">{{ request.comment }}</span>
-                <button class="edit-button" @click="editComment(request.id)">Edit</button>
-                <button class="delete-button" @click="deleteComment(request.id)">Delete</button>
+        <div class="items-container">
+            <div class="request-item" v-for="request in requests" :key="request.id">
+                <div class="text-container">
+                    <div class="song-name">
+                        <span class="artist-text"><strong>Song:</strong> {{ request.artist_song.songs.name }}</span>
+                    </div>
+                    <div class="artist-name">
+                        <span class="artist-text"><strong>Artist:</strong> {{ request.artist_song.artists.name }}</span>
+                    </div>
+
+                    <div class="comment-container">
+                        <span class="comment-text"><strong>Comment:</strong> {{ request.comment }}</span>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="edit-button" @click="editComment(request.id)">Edit</button>
+                    <button class="delete-button" @click="deleteComment(request.id)">Delete</button>
+                </div>
             </div>
         </div>
+
+
+
+
+
         <div v-if="showModal" class="modal">
             <div class="modal-content">
                 <span class="close-button" @click="showModal = false">&times;</span>
                 <form @submit.prevent="updateComment">
                     <div class="form-group">
-                        <textarea
-                            v-model="editForm.comment"
-                            class="comment-box"
-                            placeholder="Edit your comment..."
-                        ></textarea>
+                        <textarea v-model="editForm.comment" class="comment-box"
+                            placeholder="Edit your comment..."></textarea>
                     </div>
                     <div class="form-group">
                         <div class="button-container">
@@ -97,7 +108,6 @@ function updateComment() {
         </div>
     </div>
 </template>
-
 <style scoped>
 /* Existing styles */
 .container {
@@ -110,7 +120,8 @@ function updateComment() {
     padding: 20px;
 }
 
-.form, .comments-container {
+.form,
+.items-container {
     width: 100%;
     max-width: 600px;
 }
@@ -152,11 +163,11 @@ textarea.comment-box {
     background-color: #45a049;
 }
 
-.comments-container {
+.items-container {
     margin-top: 20px;
 }
 
-.comment {
+.request-item {
     padding: 15px;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -165,18 +176,26 @@ textarea.comment-box {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.comment-text {
-    word-break: break-word;
-    overflow-wrap: anywhere;
-    white-space: pre-wrap;
+.text-container {
     flex-grow: 1;
     margin-right: 10px;
 }
 
-.edit-button, .delete-button {
+.artist-text,
+.song-name,
+.comment-text {
+    display: block;
+    margin-bottom: 5px;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.edit-button,
+.delete-button {
     border: none;
     color: white;
     font-size: 14px;
@@ -184,6 +203,7 @@ textarea.comment-box {
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s;
+    margin-bottom: 5px;
 }
 
 .edit-button {

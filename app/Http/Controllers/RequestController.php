@@ -13,7 +13,7 @@ class RequestController extends Controller
      */
     public function index()
     {
-        $modelRequests = ModelRequest::with(['users', 'artist_song.songs'])->get();
+        $modelRequests = ModelRequest::with(['users', 'artist_song.songs', 'artist_song.artists'])->get();
         return Inertia::render('RequestVueFile', ['requests' => $modelRequests]);
     }
 
