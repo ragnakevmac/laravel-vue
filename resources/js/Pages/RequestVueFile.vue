@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from "vue";
-import { useForm, usePage } from "@inertiajs/inertia-vue3";
+import { ref, computed } from "vue";
+import { useForm } from "@inertiajs/inertia-vue3";
 import { Inertia } from "@inertiajs/inertia";
 
 const props = defineProps({
@@ -17,6 +17,21 @@ const editForm = useForm({
 });
 
 const showModal = ref(false);
+
+const searchQuery = ref("");
+const filteredSuggestions = computed(() => {
+    if (searchQuery.value) {
+        return props.requests.filter(request =>
+            request.artist_song.songs.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+        );
+    }
+    return [];
+});
+
+function handleSuggestionClick(suggestion) {
+    searchQuery.value = suggestion.artist_song.songs.name;
+}
+
 
 function submit() {
     form.post("/requests", {
@@ -57,6 +72,15 @@ function updateComment() {
     <div class="container">
         <form @submit.prevent="submit" class="form">
             <div class="form-group">
+                <input type="text" v-model="searchQuery" class="search-box" placeholder="Search for a song..." />
+                <ul v-if="searchQuery && filteredSuggestions.length" class="suggestions-list">
+                    <li v-for="suggestion in filteredSuggestions" :key="suggestion.id"
+                        @click="handleSuggestionClick(suggestion)">
+                        {{ suggestion.artist_song.songs.name }}
+                    </li>
+                </ul>
+            </div>
+            <div class="form-group">
                 <textarea v-model="form.comment" class="comment-box" placeholder="Write a comment..."></textarea>
             </div>
             <div class="form-group">
@@ -86,10 +110,6 @@ function updateComment() {
             </div>
         </div>
 
-
-
-
-
         <div v-if="showModal" class="modal">
             <div class="modal-content">
                 <span class="close-button" @click="showModal = false">&times;</span>
@@ -108,6 +128,7 @@ function updateComment() {
         </div>
     </div>
 </template>
+
 <style scoped>
 /* Existing styles */
 .container {
@@ -131,14 +152,38 @@ function updateComment() {
     margin: 10px 0;
 }
 
-textarea.comment-box {
+textarea.comment-box,
+input.search-box {
     width: 100%;
     padding: 15px;
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    resize: vertical;
     box-sizing: border-box;
+}
+
+input.search-box {
+    margin-bottom: 10px;
+}
+
+ul.suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+ul.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+ul.suggestions-list li:hover {
+    background-color: #f0f0f0;
 }
 
 .button-container {
