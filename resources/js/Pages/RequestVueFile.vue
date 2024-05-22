@@ -1,10 +1,11 @@
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 import { useForm } from "@inertiajs/inertia-vue3";
 import { Inertia } from "@inertiajs/inertia";
 
 const props = defineProps({
     requests: Array,
+    songs: Array, // Include the songs prop
 });
 
 const form = useForm({
@@ -17,21 +18,27 @@ const editForm = useForm({
 });
 
 const showModal = ref(false);
-
 const searchQuery = ref("");
+const showSuggestions = ref(true);
+
 const filteredSuggestions = computed(() => {
     if (searchQuery.value) {
-        return props.requests.filter(request =>
-            request.artist_song.songs.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+        return props.songs.filter(song =>
+            song.name.toLowerCase().includes(searchQuery.value.toLowerCase())
         );
     }
     return [];
 });
 
 function handleSuggestionClick(suggestion) {
-    searchQuery.value = suggestion.artist_song.songs.name;
+    searchQuery.value = suggestion.name;
+    showSuggestions.value = false;
 }
 
+function clearSearch() {
+    searchQuery.value = "";
+    showSuggestions.value = false;
+}
 
 function submit() {
     form.post("/requests", {
@@ -66,17 +73,36 @@ function updateComment() {
         },
     });
 }
+
+function handleClickOutside(event) {
+    const searchBox = document.querySelector(".search-box");
+    if (searchBox && !searchBox.contains(event.target)) {
+        showSuggestions.value = false;
+    }
+}
+
+onMounted(() => {
+    document.addEventListener("click", handleClickOutside);
+});
+
+onBeforeUnmount(() => {
+    document.removeEventListener("click", handleClickOutside);
+});
 </script>
+
 
 <template>
     <div class="container">
         <form @submit.prevent="submit" class="form">
-            <div class="form-group">
-                <input type="text" v-model="searchQuery" class="search-box" placeholder="Search for a song..." />
-                <ul v-if="searchQuery && filteredSuggestions.length" class="suggestions-list">
+            <div class="form-group search-group">
+                <input type="text" v-model="searchQuery" @focus="showSuggestions = true" class="search-box"
+                    placeholder="Search for a song or artist..." />
+
+                <button type="button" class="clear-button" @click="clearSearch">×</button>
+                <ul v-if="searchQuery && showSuggestions && filteredSuggestions.length" class="suggestions-list">
                     <li v-for="suggestion in filteredSuggestions" :key="suggestion.id"
                         @click="handleSuggestionClick(suggestion)">
-                        {{ suggestion.artist_song.songs.name }}
+                        {{ suggestion.name }}
                     </li>
                 </ul>
             </div>
@@ -129,6 +155,7 @@ function updateComment() {
     </div>
 </template>
 
+
 <style scoped>
 /* Existing styles */
 .container {
@@ -166,6 +193,26 @@ input.search-box {
     margin-bottom: 10px;
 }
 
+.search-group {
+    position: relative;
+}
+
+.clear-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+}
+
+.clear-button:hover {
+    color: #666;
+}
+
 ul.suggestions-list {
     list-style-type: none;
     padding: 0;
@@ -175,6 +222,11 @@ ul.suggestions-list {
     border-radius: 8px;
     max-height: 200px;
     overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 5px);
+    /* Position the suggestions list below the search box */
+    z-index: 1;
 }
 
 ul.suggestions-list li {

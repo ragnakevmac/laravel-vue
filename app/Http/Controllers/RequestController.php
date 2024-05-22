@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Song;
+use App\Models\Artist;
+use App\Models\ArtistSong;
 use App\Models\Request as ModelRequest;
 use Illuminate\Http\Request as HttpRequest;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\DB;
 
 class RequestController extends Controller
 {
@@ -14,7 +18,18 @@ class RequestController extends Controller
     public function index()
     {
         $modelRequests = ModelRequest::with(['users', 'artist_song.songs', 'artist_song.artists'])->get();
-        return Inertia::render('RequestVueFile', ['requests' => $modelRequests]);
+
+        // Fetch all songs with artist names
+        $songs = Song::join('artist_song', 'songs.id', '=', 'artist_song.song_id')
+            ->join('artists', 'artists.id', '=', 'artist_song.artist_id')
+            ->select('songs.id', DB::raw("CONCAT(artists.name, ' - ', songs.name) as name"))
+            ->get();
+
+        // Return the data to the Inertia view
+        return Inertia::render('RequestVueFile', [
+            'requests' => $modelRequests,
+            'songs' => $songs,
+        ]);
     }
 
     /**
