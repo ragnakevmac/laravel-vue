@@ -5,26 +5,39 @@ import { Inertia } from "@inertiajs/inertia";
 
 const props = defineProps({
     requests: Array,
-    songs: Array, // Include the songs prop
+    titles: Array, // Include the titles prop
 });
 
 const form = useForm({
     comment: "",
+    artist_song_id: null, // Add artist_song_id field
 });
 
 const editForm = useForm({
     id: null,
     comment: "",
+    artist_song_id: null, // Add artist_song_id field
 });
 
 const showModal = ref(false);
 const searchQuery = ref("");
+const editSearchQuery = ref("");
 const showSuggestions = ref(true);
+const showEditSuggestions = ref(true);
 
 const filteredSuggestions = computed(() => {
     if (searchQuery.value) {
-        return props.songs.filter(song =>
-            song.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+        return props.titles.filter(title =>
+            title.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+        );
+    }
+    return [];
+});
+
+const filteredEditSuggestions = computed(() => {
+    if (editSearchQuery.value) {
+        return props.titles.filter(title =>
+            title.name.toLowerCase().includes(editSearchQuery.value.toLowerCase())
         );
     }
     return [];
@@ -32,18 +45,33 @@ const filteredSuggestions = computed(() => {
 
 function handleSuggestionClick(suggestion) {
     searchQuery.value = suggestion.name;
+    form.artist_song_id = suggestion.id; // Set artist_song_id for form
     showSuggestions.value = false;
+}
+
+function handleEditSuggestionClick(suggestion) {
+    editSearchQuery.value = suggestion.name;
+    editForm.artist_song_id = suggestion.id; // Set artist_song_id for edit form
+    showEditSuggestions.value = false;
 }
 
 function clearSearch() {
     searchQuery.value = "";
     showSuggestions.value = false;
+    form.artist_song_id = null; // Clear artist_song_id when search is cleared
+}
+
+function clearEditSearch() {
+    editSearchQuery.value = "";
+    showEditSuggestions.value = false;
+    editForm.artist_song_id = null; // Clear artist_song_id when search is cleared
 }
 
 function submit() {
     form.post("/requests", {
         onSuccess: () => {
             form.reset("comment");
+            form.artist_song_id = null; // Reset artist_song_id after submission
         },
     });
 }
@@ -59,17 +87,23 @@ function deleteComment(id) {
 }
 
 function editComment(id) {
-    const comment = props.requests.find(request => request.id === id).comment;
+    const request = props.requests.find(request => request.id === id);
     editForm.id = id;
-    editForm.comment = comment;
+    editForm.comment = request.comment;
+    editForm.artist_song_id = request.artist_song_id;
+    editSearchQuery.value = request.artist_song.songs.name; // Set initial search query in the edit form
     showModal.value = true;
 }
 
 function updateComment() {
-    Inertia.put(`/requests/${editForm.id}`, { comment: editForm.comment }, {
+    Inertia.put(`/requests/${editForm.id}`, {
+        comment: editForm.comment,
+        artist_song_id: editForm.artist_song_id,
+    }, {
         onSuccess: () => {
             showModal.value = false;
             editForm.reset();
+            clearEditSearch();
         },
     });
 }
@@ -78,6 +112,10 @@ function handleClickOutside(event) {
     const searchBox = document.querySelector(".search-box");
     if (searchBox && !searchBox.contains(event.target)) {
         showSuggestions.value = false;
+    }
+    const editSearchBox = document.querySelector(".edit-search-box");
+    if (editSearchBox && !editSearchBox.contains(event.target)) {
+        showEditSuggestions.value = false;
     }
 }
 
@@ -90,14 +128,12 @@ onBeforeUnmount(() => {
 });
 </script>
 
-
 <template>
     <div class="container">
         <form @submit.prevent="submit" class="form">
             <div class="form-group search-group">
                 <input type="text" v-model="searchQuery" @focus="showSuggestions = true" class="search-box"
                     placeholder="Search for a song or artist..." />
-
                 <button type="button" class="clear-button" @click="clearSearch">×</button>
                 <ul v-if="searchQuery && showSuggestions && filteredSuggestions.length" class="suggestions-list">
                     <li v-for="suggestion in filteredSuggestions" :key="suggestion.id"
@@ -140,6 +176,18 @@ onBeforeUnmount(() => {
             <div class="modal-content">
                 <span class="close-button" @click="showModal = false">&times;</span>
                 <form @submit.prevent="updateComment">
+                    <div class="form-group search-group">
+                        <input type="text" v-model="editSearchQuery" @focus="showEditSuggestions = true"
+                            class="edit-search-box" placeholder="Search for a song or artist..." />
+                        <button type="button" class="clear-button" @click="clearEditSearch">×</button>
+                        <ul v-if="editSearchQuery && showEditSuggestions && filteredEditSuggestions.length"
+                            class="suggestions-list">
+                            <li v-for="suggestion in filteredEditSuggestions" :key="suggestion.id"
+                                @click="handleEditSuggestionClick(suggestion)">
+                                {{ suggestion.name }}
+                            </li>
+                        </ul>
+                    </div>
                     <div class="form-group">
                         <textarea v-model="editForm.comment" class="comment-box"
                             placeholder="Edit your comment..."></textarea>
@@ -154,7 +202,6 @@ onBeforeUnmount(() => {
         </div>
     </div>
 </template>
-
 
 <style scoped>
 /* Existing styles */
@@ -180,7 +227,8 @@ onBeforeUnmount(() => {
 }
 
 textarea.comment-box,
-input.search-box {
+input.search-box,
+input.edit-search-box {
     width: 100%;
     padding: 15px;
     font-size: 16px;
@@ -225,7 +273,6 @@ ul.suggestions-list {
     position: absolute;
     width: 100%;
     top: calc(100% + 5px);
-    /* Position the suggestions list below the search box */
     z-index: 1;
 }
 
@@ -356,5 +403,10 @@ ul.suggestions-list li:hover {
 
 .close-button:hover {
     color: #000;
+}
+
+/* Ensure edit search box matches the width of textarea */
+input.edit-search-box {
+    margin-bottom: 10px;
 }
 </style>

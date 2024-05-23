@@ -9,7 +9,7 @@ class Request extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['status', 'comment'];
+    protected $fillable = ['status', 'comment', 'artist_song_id']; // Include artist_song_id
 
     public function users()
     {

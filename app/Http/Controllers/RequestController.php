@@ -20,15 +20,15 @@ class RequestController extends Controller
         $modelRequests = ModelRequest::with(['users', 'artist_song.songs', 'artist_song.artists'])->get();
 
         // Fetch all songs with artist names
-        $songs = Song::join('artist_song', 'songs.id', '=', 'artist_song.song_id')
+        $titles = Song::join('artist_song', 'songs.id', '=', 'artist_song.song_id')
             ->join('artists', 'artists.id', '=', 'artist_song.artist_id')
-            ->select('songs.id', DB::raw("CONCAT(artists.name, ' - ', songs.name) as name"))
+            ->select('artist_song.id', DB::raw("CONCAT(artists.name, ' - ', songs.name) as name"))
             ->get();
 
         // Return the data to the Inertia view
         return Inertia::render('RequestVueFile', [
             'requests' => $modelRequests,
-            'songs' => $songs,
+            'titles' => $titles,
         ]);
     }
 
@@ -43,23 +43,24 @@ class RequestController extends Controller
     /**
      * Store a newly created resource in storage.
      */
+
+
     public function store(HttpRequest $apiRequest)
     {
-        // $modelRequest = new ModelRequest;
-        // $modelRequest->comment = $apiRequest->comment;
-        // $modelRequest->save();
-
-        // return response()->json(['message' => 'Comment created successfully!', 'data' => $modelRequest], 201);
-
 
         $apiRequest->validate([
             'comment' => 'required',
+            'artist_song_id' => 'required|exists:artist_song,id', // Ensure the artist_song_id exists in the artist_songs table
         ]);
 
-        ModelRequest::create($apiRequest->all());
+        ModelRequest::create([
+            'comment' => $apiRequest->comment,
+            'artist_song_id' => $apiRequest->artist_song_id,
+        ]);
 
-        return redirect()->back()->with('success', 'Comment posted.');
+        return redirect()->back()->with('success', 'Request posted.');
     }
+
 
     /**
      * Display the specified resource.
