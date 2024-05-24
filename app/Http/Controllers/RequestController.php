@@ -49,8 +49,8 @@ class RequestController extends Controller
     {
 
         $apiRequest->validate([
-            'comment' => 'required',
-            'artist_song_id' => 'required|exists:artist_song,id', // Ensure the artist_song_id exists in the artist_songs table
+            'comment' => 'nullable|string',
+            'artist_song_id' => 'nullable|exists:artist_song,id',
         ]);
 
         ModelRequest::create([
@@ -86,20 +86,23 @@ class RequestController extends Controller
         // Validate the incoming request
         $apiRequest->validate([
             'comment' => 'required',
+            'artist_song_id' => 'nullable|exists:artist_song,id',
         ]);
 
-        // Find the comment by ID
-        $comment = ModelRequest::findOrFail($id);
+        // Find the request by ID
+        $request = ModelRequest::findOrFail($id);
 
-        // Update the comment
-        $comment->comment = $apiRequest->input('comment');
+        // Update the request
+        $request->comment = $apiRequest->input('comment');
+        $request->artist_song_id = $apiRequest->input('artist_song_id'); // Update the artist_song_id
 
-        // Save the updated comment
-        $comment->save();
+        // Save the updated request
+        $request->save();
 
         // Redirect back with a success message
-        return redirect()->back()->with('success', 'Comment updated.');
+        return redirect()->back()->with('success', 'Request updated.');
     }
+
 
     /**
      * Remove the specified resource from storage.

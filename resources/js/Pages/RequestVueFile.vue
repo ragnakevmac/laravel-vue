@@ -91,7 +91,7 @@ function editComment(id) {
     editForm.id = id;
     editForm.comment = request.comment;
     editForm.artist_song_id = request.artist_song_id;
-    editSearchQuery.value = request.artist_song.songs.name; // Set initial search query in the edit form
+    editSearchQuery.value = request.artist_song ? request.artist_song.songs.name : ''; // Set initial search query in the edit form
     showModal.value = true;
 }
 
@@ -154,13 +154,12 @@ onBeforeUnmount(() => {
         <div class="items-container">
             <div class="request-item" v-for="request in requests" :key="request.id">
                 <div class="text-container">
-                    <div class="song-name">
+                    <div v-if="request.artist_song" class="song-name">
                         <span class="artist-text"><strong>Song:</strong> {{ request.artist_song.songs.name }}</span>
                     </div>
-                    <div class="artist-name">
+                    <div v-if="request.artist_song" class="artist-name">
                         <span class="artist-text"><strong>Artist:</strong> {{ request.artist_song.artists.name }}</span>
                     </div>
-
                     <div class="comment-container">
                         <span class="comment-text"><strong>Comment:</strong> {{ request.comment }}</span>
                     </div>
@@ -202,6 +201,7 @@ onBeforeUnmount(() => {
         </div>
     </div>
 </template>
+
 
 <style scoped>
 /* Existing styles */
