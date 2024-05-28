@@ -17,7 +17,8 @@ class SongFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->sentence()
+            'name' => fake()->sentence(),
+            'popularity' => fake()->numberBetween(1, 100)
         ];
     }
 }

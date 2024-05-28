@@ -18,9 +18,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+
+        $this->call(ArtistSeeder::class);
+
+
         User::factory(10)->create();
         Dj::factory(5)->create();
-        Artist::factory(30)->create();
+        // Artist::factory(30)->create();
         Song::factory(100)->create();
         ArtistSong::factory(15)->create();
         Request::factory(15)->create();
