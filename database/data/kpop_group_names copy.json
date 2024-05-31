@@ -1,0 +1,2602 @@
+[
+    {
+        "non_korean_name": "野菊",
+        "korean_name": "들국화",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "都市のアイドル",
+        "korean_name": "도시아이들",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "白頭山",
+        "korean_name": "백두산",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ソウルシスターズ",
+        "korean_name": "서울시스터즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ソバンチャ",
+        "korean_name": "소방차",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "セトレ",
+        "korean_name": "세또래",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "世代交代",
+        "korean_name": "세대교체",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "第3世代",
+        "korean_name": "제3세대",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ヒョン・ジニョンとワワ",
+        "korean_name": "현진영과 와와",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "夜叉",
+        "korean_name": "야차",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ソテジワアイドゥル",
+        "korean_name": "서태지와 아이들",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Noise",
+        "korean_name": "노이즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ZAM",
+        "korean_name": "잼",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DEUX",
+        "korean_name": "듀스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Solid",
+        "korean_name": "솔리드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Roo'Ra",
+        "korean_name": "룰라",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Cool",
+        "korean_name": "쿨",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "R.ef",
+        "korean_name": "알이에프",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Turbo",
+        "korean_name": "터보",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "IDOL",
+        "korean_name": "아이돌",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Young Turks Club",
+        "korean_name": "영턱스클럽",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "H.O.T.",
+        "korean_name": "에이치오티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HAMO HAMO",
+        "korean_name": "하모하모",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "UP",
+        "korean_name": "유피",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SECHSKIES",
+        "korean_name": "젝스키스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Baby V.O.X",
+        "korean_name": "베이비복스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "太四子",
+        "korean_name": "태사자",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NRG",
+        "korean_name": "엔알지",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "S.E.S.",
+        "korean_name": "에스이에스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "神話",
+        "korean_name": "신화",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Fin.K.L.",
+        "korean_name": "핑클",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Circle",
+        "korean_name": "써클",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "S#ARP",
+        "korean_name": "샵",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "1TYM",
+        "korean_name": "원타임",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "O-24",
+        "korean_name": "오투포",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "KOYOTE",
+        "korean_name": "코요태",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "god",
+        "korean_name": "지오디",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Y2K",
+        "korean_name": "와이투케이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CLICK B",
+        "korean_name": "클릭비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "FLY TO THE SKY",
+        "korean_name": "플라이 투 더 스카이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "T.T.MA",
+        "korean_name": "티티마",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "UN",
+        "korean_name": "유엔",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Jewelry",
+        "korean_name": "쥬얼리",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "D-Base",
+        "korean_name": "디베이스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "AL",
+        "korean_name": "알",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "M.I.L.K.",
+        "korean_name": "밀크",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Sugar",
+        "korean_name": "슈가",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Black Beat",
+        "korean_name": "블랙 비트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "J-Walk",
+        "korean_name": "제이워크",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SHINVI",
+        "korean_name": "신비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "jtL",
+        "korean_name": "제이티엘",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BUZZ",
+        "korean_name": "버즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "東方神起",
+        "korean_name": "동방신기",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "天上智喜 The Grace",
+        "korean_name": "천상지희",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SS501",
+        "korean_name": "더블 에스 오 공 일",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LPG",
+        "korean_name": "엘피지",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SUPER JUNIOR",
+        "korean_name": "슈퍼주니어",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SeeYa",
+        "korean_name": "씨야",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Brown Eyed Girls",
+        "korean_name": "브라운 아이드 걸스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BIGBANG",
+        "korean_name": "빅뱅",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "XING",
+        "korean_name": "씽",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Wonder Girls",
+        "korean_name": "원더걸스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "KARA",
+        "korean_name": "카라",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "FTISLAND",
+        "korean_name": "FT아일랜드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "T-MAX",
+        "korean_name": "티맥스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Black Pearl",
+        "korean_name": "블랙펄",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "少女時代",
+        "korean_name": "소녀시대",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Sunny Hill",
+        "korean_name": "써니힐",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SUPERNOVA(旧名:超新星）",
+        "korean_name": "슈퍼노바(旧名:초신성）",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DAVICHI",
+        "korean_name": "다비치",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "A'st1",
+        "korean_name": "에이스타일",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SHINee",
+        "korean_name": "샤이니",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "2AM",
+        "korean_name": "투에이엠",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SM☆SH",
+        "korean_name": "스매쉬",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "U-KISS",
+        "korean_name": "유키스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "2PM",
+        "korean_name": "투피엠",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "AFTERSCHOOL",
+        "korean_name": "애프터스쿨",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "2NE1",
+        "korean_name": "투애니원",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "4MINUTE",
+        "korean_name": "포미닛",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "T-ARA",
+        "korean_name": "티아라",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TwiNy",
+        "korean_name": "트위니",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "f(x)",
+        "korean_name": "에프엑스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SHU-I",
+        "korean_name": "슈아이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HAM",
+        "korean_name": "햄",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Secret",
+        "korean_name": "시크릿",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MBLAQ",
+        "korean_name": "엠블랙",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Highlight(旧名:BEAST）",
+        "korean_name": "하이라이트(旧名:비스트）",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "RAINBOW",
+        "korean_name": "레인보우",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ZE:A",
+        "korean_name": "제국의아이들",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "F.CUZ",
+        "korean_name": "포커즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CNBLUE",
+        "korean_name": "씨엔블루",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "大国男児",
+        "korean_name": "대국남아",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SISTAR",
+        "korean_name": "씨스타",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "INFINITE",
+        "korean_name": "인피니트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "miss A",
+        "korean_name": "미스에이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Girl's Day",
+        "korean_name": "걸스데이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TEEN TOP",
+        "korean_name": "틴탑",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "9MUSES",
+        "korean_name": "나인뮤지스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "GP Basic",
+        "korean_name": "지피 베이직",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "男女共学",
+        "korean_name": "남녀공학",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Dalshabet",
+        "korean_name": "달샤벳",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "F-ve Dolls",
+        "korean_name": "파이브돌스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "RANIA",
+        "korean_name": "라니아",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BBGIRLS(旧名:Brave Girls)",
+        "korean_name": "브브걸(旧名:브레이브걸스)",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Block B",
+        "korean_name": "블락비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Apink",
+        "korean_name": "에이핑크",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "B1A4",
+        "korean_name": "비원에이포",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BF(旧名:BOYFRIEND)",
+        "korean_name": "보이프렌드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Stellar",
+        "korean_name": "스텔라",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "JYJ",
+        "korean_name": "제이와이제이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MYNAME",
+        "korean_name": "마이네임",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Trouble Maker",
+        "korean_name": "트러블메이커",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "B.A.P",
+        "korean_name": "비에이피",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SPICA",
+        "korean_name": "스피카",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "EXID",
+        "korean_name": "이엑스아이디",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NU'EST",
+        "korean_name": "뉴이스트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BTOB",
+        "korean_name": "비투비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "EXO",
+        "korean_name": "엑소",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HELLOVENUS",
+        "korean_name": "헬로비너스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VIXX",
+        "korean_name": "빅스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "A-JAX（英語版）",
+        "korean_name": "에이젝스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CROSS GENE",
+        "korean_name": "크로스진",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Flashe",
+        "korean_name": "플래쉬",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BIGSTAR",
+        "korean_name": "빅스타",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "GLAM",
+        "korean_name": "글램",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "C-CLOWN",
+        "korean_name": "씨클라운",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Crayon Pop",
+        "korean_name": "크레용팝",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TAHITI",
+        "korean_name": "타히티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "AOA",
+        "korean_name": "에이오에이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TINY-G",
+        "korean_name": "타이니지",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "FIESTAR",
+        "korean_name": "피에스타",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PURETTY",
+        "korean_name": "퓨리티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "24K",
+        "korean_name": "투포케이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "100%",
+        "korean_name": "백퍼센트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "The SeeYa",
+        "korean_name": "더 씨야",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SPEED",
+        "korean_name": "스피드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LADIES' CODE",
+        "korean_name": "레이디스 코드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HISTORY",
+        "korean_name": "히스토리",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LC9",
+        "korean_name": "엘씨나인",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Boys Republic",
+        "korean_name": "소년공화국",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BTS",
+        "korean_name": "방탄소년단",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "2EYES",
+        "korean_name": "투아이즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TURAN",
+        "korean_name": "투란",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BESTie",
+        "korean_name": "베스티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LIVE HIGH",
+        "korean_name": "라이브하이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "I-REX",
+        "korean_name": "아이렉스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TINT",
+        "korean_name": "틴트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "GOT7",
+        "korean_name": "갓세븐",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "1PS",
+        "korean_name": "원피스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "JJCC",
+        "korean_name": "제이제이씨씨",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "AKMU",
+        "korean_name": "악동뮤지션",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BTL",
+        "korean_name": "비티엘",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Berry Good",
+        "korean_name": "베리굿",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MAMAMOO",
+        "korean_name": "마마무",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BIGFLO",
+        "korean_name": "빅플로",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HALO",
+        "korean_name": "헤일로",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Ye-A",
+        "korean_name": "예아",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ZEST",
+        "korean_name": "제스트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Red Velvet",
+        "korean_name": "레드벨벳",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "WINNER",
+        "korean_name": "위너",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "4TEN",
+        "korean_name": "포텐",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LABOUM",
+        "korean_name": "라붐",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MADTOWN",
+        "korean_name": "매드타운",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "UNIQ",
+        "korean_name": "유니크",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "purfles",
+        "korean_name": "퍼펄즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "D.Holic",
+        "korean_name": "디홀릭",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HOTSHOT",
+        "korean_name": "핫샷",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Lovelyz",
+        "korean_name": "러블리즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SONAMOO",
+        "korean_name": "소나무",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "GFRIEND",
+        "korean_name": "여자친구",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CLC",
+        "korean_name": "씨엘씨",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "THE ARK",
+        "korean_name": "디아크",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "OH MY GIRL",
+        "korean_name": "오마이걸",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ROMEO",
+        "korean_name": "로미오",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MONSTA X",
+        "korean_name": "몬스타엑스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "N.Flying",
+        "korean_name": "엔플라잉",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SEVENTEEN",
+        "korean_name": "세븐틴",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PLAYBACK",
+        "korean_name": "플레이백",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "WANNA.B",
+        "korean_name": "워너비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "APRIL",
+        "korean_name": "에이프릴",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "myB",
+        "korean_name": "마이비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DAY6",
+        "korean_name": "데이식스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "UP10TION",
+        "korean_name": "업텐션",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DIA",
+        "korean_name": "다이아",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "iKON",
+        "korean_name": "아이콘",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VIVIDIVA",
+        "korean_name": "비비디바",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TWICE",
+        "korean_name": "트와이스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VAV",
+        "korean_name": "부이에이부이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MAP6",
+        "korean_name": "맵식스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SNUPER",
+        "korean_name": "스누퍼",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CoCoSoRi",
+        "korean_name": "코코소리",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "IMFACT",
+        "korean_name": "임팩트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ASTRO",
+        "korean_name": "아스트로",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VOISPER",
+        "korean_name": "보이스퍼",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "宇宙少女",
+        "korean_name": "우주소녀",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "KNK",
+        "korean_name": "크나큰",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HOLICS",
+        "korean_name": "홀릭스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NCT",
+        "korean_name": "엔시티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MIXX",
+        "korean_name": "믹스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "A.DE",
+        "korean_name": "에이디이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "gugudan",
+        "korean_name": "구구단",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "I.O.I",
+        "korean_name": "아이오아이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VROMANCE",
+        "korean_name": "브로맨스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "KARD",
+        "korean_name": "카드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "INX",
+        "korean_name": "인엑스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BLACKPINK",
+        "korean_name": "블랙핑크",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MASC",
+        "korean_name": "마스크",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SF9",
+        "korean_name": "에스에프나인",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PENTAGON",
+        "korean_name": "펜타곤",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VICTON",
+        "korean_name": "빅톤",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MOMOLAND",
+        "korean_name": "모모랜드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BONUSbaby",
+        "korean_name": "보너스베이비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VARSITY",
+        "korean_name": "바시티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TST(旧名:TOPSECRET）",
+        "korean_name": "일급비밀",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Dreamcatcher",
+        "korean_name": "드림캐쳐",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "H.U.B",
+        "korean_name": "에이치유비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BLANC7",
+        "korean_name": "블랑세븐",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MVP",
+        "korean_name": "엠브이피",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Seven O'clock",
+        "korean_name": "세븐어클락",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PRISTIN",
+        "korean_name": "프리스틴",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LIPBUBBLE",
+        "korean_name": "립버블",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HINT",
+        "korean_name": "힌트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BLACK6IX",
+        "korean_name": "블랙식스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HONEYST",
+        "korean_name": "허니스트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "A.C.E",
+        "korean_name": "에이스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Girls’ Alert",
+        "korean_name": "소녀주의보",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ALICE(旧名:ELRIS）",
+        "korean_name": "앨리스(旧名:엘리스）",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "G-reyish",
+        "korean_name": "그레이시",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "FAVORITE",
+        "korean_name": "페이버릿",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Limesoda",
+        "korean_name": "라임소다",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "14U",
+        "korean_name": "원포유",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MYTEEN",
+        "korean_name": "마이틴",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "P.O.P",
+        "korean_name": "피오피",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Apple.B",
+        "korean_name": "애플비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ONF",
+        "korean_name": "온앤오프",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "The Rose",
+        "korean_name": "더로즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Wanna One",
+        "korean_name": "워너원",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Weki Meki",
+        "korean_name": "위키미키",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "熱血男児",
+        "korean_name": "열혈남아",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "GreatGuys",
+        "korean_name": "멋진녀석들",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Golden Child",
+        "korean_name": "골든차일드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "GOOD DAY",
+        "korean_name": "굿데이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "IZ",
+        "korean_name": "아이즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "IM",
+        "korean_name": "아이엠",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MXM",
+        "korean_name": "엠엑스엠",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BAIKAL",
+        "korean_name": "바이칼",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TRCNG",
+        "korean_name": "티알씨엔지",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HASHTAG",
+        "korean_name": "해시태그",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HI CUTIE",
+        "korean_name": "하이큐티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "RAINZ",
+        "korean_name": "레인즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VIVA",
+        "korean_name": "비바",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "JBJ",
+        "korean_name": "제이비제이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "GeeGu(旧名:GATE9）",
+        "korean_name": "지구",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SKYE(旧名:IN2IT）",
+        "korean_name": "스카이(旧名:인투잇）",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HEYGIRLS",
+        "korean_name": "헤이걸스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Blah Blah",
+        "korean_name": "블라블라",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Yellow Bee",
+        "korean_name": "옐로비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BUSTERS",
+        "korean_name": "버스터즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BLK",
+        "korean_name": "비엘케이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "1NB",
+        "korean_name": "원엔비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "THE BOYZ",
+        "korean_name": "더보이즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "GIRLKIND",
+        "korean_name": "걸카인드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "fromis_9",
+        "korean_name": "프로미스나인",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TARGET",
+        "korean_name": "타겟",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SHA SHA",
+        "korean_name": "샤샤",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Stray Kids",
+        "korean_name": "스트레이 키즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "UNB",
+        "korean_name": "유엔비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NOIR",
+        "korean_name": "느와르",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "My Darling",
+        "korean_name": "마이달링",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "(G)I-DLE",
+        "korean_name": "(여자)아이들",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SPECTRUM",
+        "korean_name": "스팩트럼",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "UNI.T",
+        "korean_name": "유니티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "KHAN",
+        "korean_name": "칸",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NeonPunch",
+        "korean_name": "네온펀치",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SATURDAY",
+        "korean_name": "세러데이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NATURE",
+        "korean_name": "네이처",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "D-CRUNCH",
+        "korean_name": "디크런치",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CHERRY ON TOP",
+        "korean_name": "체리온탑",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "今月の少女",
+        "korean_name": "이달의 소녀",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ALiKE",
+        "korean_name": "얼라이크",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "We Girls",
+        "korean_name": "위걸스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "公園少女",
+        "korean_name": "공원소녀",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LUCENTE",
+        "korean_name": "루첸트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "THE MAN BLK",
+        "korean_name": "더맨블랙",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LST",
+        "korean_name": "엘에스티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Maywish",
+        "korean_name": "메이위시",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ShaFLA",
+        "korean_name": "샤플라",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ATEEZ",
+        "korean_name": "에이티즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Pink Fantasy",
+        "korean_name": "핑크판타지",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "IZ*ONE",
+        "korean_name": "아이즈원",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "JBJ95",
+        "korean_name": "제이비제이구오",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DreamNote",
+        "korean_name": "드림노트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "AQUA",
+        "korean_name": "아쿠아",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "M.O.N.T",
+        "korean_name": "몬트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ONEUS",
+        "korean_name": "원어스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VERIVERY",
+        "korean_name": "베리베리",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Cherry Bullet",
+        "korean_name": "체리블렛",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MustB",
+        "korean_name": "머스트비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "AWEEK",
+        "korean_name": "어위크",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "415",
+        "korean_name": "사이로",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ITZY",
+        "korean_name": "있지",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VANNER",
+        "korean_name": "배너",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TREI",
+        "korean_name": "트레이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "The Pink Lady",
+        "korean_name": "핑크레이디",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Z-Boys",
+        "korean_name": "지보이즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Z-Girls",
+        "korean_name": "지걸스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TOMORROW X TOGETHER",
+        "korean_name": "투모로우바이투게더",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TRIGER(旧名:TRIGGER)",
+        "korean_name": "트리거",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ASTIN",
+        "korean_name": "아스틴",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ARGON",
+        "korean_name": "아르곤",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "The T-Bird",
+        "korean_name": "티버드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "EVERGLOW",
+        "korean_name": "에버글로우",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "1TEAM",
+        "korean_name": "원팀",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Girl Crush",
+        "korean_name": "걸크러쉬",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BVNDIT",
+        "korean_name": "밴디트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PEACE",
+        "korean_name": "피쓰",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "1THE9",
+        "korean_name": "원더나인",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "API(旧名:Ho1iday）",
+        "korean_name": "에이피아이(旧名:홀리데이）",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ENOi",
+        "korean_name": "이엔오아이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DKZ(旧名:DONGKIZ）",
+        "korean_name": "디케이지(旧名:동키즈）",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Newkidd",
+        "korean_name": "뉴키드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ONEWE",
+        "korean_name": "원위",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "3YE",
+        "korean_name": "써드아이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "AB6IX",
+        "korean_name": "에이비식스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "WE IN THE ZONE",
+        "korean_name": "위인더존",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "OnlyOneOf",
+        "korean_name": "온리원오브",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BZ-BOYS",
+        "korean_name": "청공소년",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LIMITLESS",
+        "korean_name": "리미트리스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CIX",
+        "korean_name": "씨아이엑스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "D1CE",
+        "korean_name": "디원스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "FANATICS",
+        "korean_name": "파나틱스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Rocket Punch",
+        "korean_name": "로켓펀치",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "N.CUS",
+        "korean_name": "엔쿠스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "X1",
+        "korean_name": "엑스원",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ANS",
+        "korean_name": "에이엔에스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TEEN TEEN",
+        "korean_name": "틴틴",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BDC",
+        "korean_name": "비디씨",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SuperM",
+        "korean_name": "슈퍼엠",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ARIAZ",
+        "korean_name": "아리아즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HINAPIA",
+        "korean_name": "희나피아",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DUSTIN",
+        "korean_name": "더스틴",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "B.O.Y",
+        "korean_name": "비오브유",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DKB",
+        "korean_name": "다크비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "cignature",
+        "korean_name": "시그니처",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "UNVS",
+        "korean_name": "유엔브이에스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "XENEX",
+        "korean_name": "제넥스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MCND",
+        "korean_name": "엠씨엔디",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CRAXY",
+        "korean_name": "크랙시",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MY.st",
+        "korean_name": "마아스트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TO1(旧名:TOO）",
+        "korean_name": "티오원(旧名:티오오）",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Bandage",
+        "korean_name": "밴디지",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CRAVITY",
+        "korean_name": "크래비티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "H&D",
+        "korean_name": "에이치앤드디",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LUCY",
+        "korean_name": "루시",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "woo!ah!",
+        "korean_name": "우아",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "REDSQUARE",
+        "korean_name": "레드스퀘어",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SECRET NUMBER",
+        "korean_name": "시크릿넘버",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "F.able",
+        "korean_name": "페이블",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "E'LAST",
+        "korean_name": "엘라스트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Weeekly",
+        "korean_name": "위클리",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MAKAMAKA",
+        "korean_name": "마카마카",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TREASURE",
+        "korean_name": "트레저",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "FLORIA",
+        "korean_name": "플로리아",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BOTOPASS",
+        "korean_name": "보토패스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LUNARSOLAR",
+        "korean_name": "루나솔라",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CHECKMATE",
+        "korean_name": "체크메이트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "GHOST9",
+        "korean_name": "고스트나인",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PRECIOUS",
+        "korean_name": "프레셔스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "XUM",
+        "korean_name": "썸",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "WEi",
+        "korean_name": "위아이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BLACKSWAN",
+        "korean_name": "블랙스완",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Asome.D",
+        "korean_name": "에이썸디",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DRIPPIN",
+        "korean_name": "드리핀",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "P1Harmony",
+        "korean_name": "피원하모니",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "STAYC",
+        "korean_name": "스테이씨",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "aespa",
+        "korean_name": "에스파",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Bling Bling",
+        "korean_name": "블링블링",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "withus",
+        "korean_name": "위더스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BAE173",
+        "korean_name": "비에이이일칠삼",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ENHYPEN",
+        "korean_name": "엔하이픈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Rolling Quartz",
+        "korean_name": "롤링쿼츠",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TFN(旧名:T1419）",
+        "korean_name": "티에프엔(旧名:티일사일구)",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TRI.BE",
+        "korean_name": "트라이비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "KINGDOM",
+        "korean_name": "킹덤",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ATO6",
+        "korean_name": "에이투식스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PIXY",
+        "korean_name": "픽시",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "WOW",
+        "korean_name": "와우",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MAJORS",
+        "korean_name": "메이져스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Ciipher",
+        "korean_name": "싸이퍼",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PURPLE KISS",
+        "korean_name": "퍼플키스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MIRAE",
+        "korean_name": "미래소년",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NTX",
+        "korean_name": "엔티엑스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "W.A.O",
+        "korean_name": "위아더원",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HOT ISSUE",
+        "korean_name": "핫이슈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BLITZERS",
+        "korean_name": "블리처스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "EPEX",
+        "korean_name": "이펙스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LIGHTSUM",
+        "korean_name": "라잇썸",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "JUST B",
+        "korean_name": "저스트비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "OMEGA X",
+        "korean_name": "오메가엑스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SKYLE",
+        "korean_name": "스카이리",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Hi-L",
+        "korean_name": "하이엘",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SOLIA",
+        "korean_name": "쏠리아",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PoshGirls",
+        "korean_name": "파시걸스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PRITTI-G",
+        "korean_name": "프리티지",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Ferry Blue",
+        "korean_name": "페리블루",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ICHILLIN'",
+        "korean_name": "아이칠린",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MEGAMAX",
+        "korean_name": "메가맥스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LUMINOUS（朝鮮語版）",
+        "korean_name": "루미너스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BEAUTYBOX",
+        "korean_name": "뷰티박스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NIK",
+        "korean_name": "니크",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "bugAboo",
+        "korean_name": "버가부",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Billlie",
+        "korean_name": "빌리",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "lilli lilli",
+        "korean_name": "릴리릴리",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "IVE",
+        "korean_name": "아이브",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Xdinary Heroes",
+        "korean_name": "엑스디너리히어로즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Rocking Doll",
+        "korean_name": "록킹돌",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Kep1er",
+        "korean_name": "케플러",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "H1-KEY",
+        "korean_name": "하이키",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TRENDZ",
+        "korean_name": "트렌드지",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VIVIZ",
+        "korean_name": "비비지",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "JWiiver",
+        "korean_name": "제이위버",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NMIXX",
+        "korean_name": "엔믹스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BLACK LEVEL",
+        "korean_name": "블랙레벨",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TEMPEST",
+        "korean_name": "템페스트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TAN",
+        "korean_name": "티에이엔(旧名:탄）",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NINE.i",
+        "korean_name": "나인아이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ILY:1",
+        "korean_name": "아이리원",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "YOUNITE",
+        "korean_name": "유나이트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LE SSERAFIM",
+        "korean_name": "르세라핌",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CLASS:y",
+        "korean_name": "클라씨",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "THE NEW SIX(旧名:TNX)",
+        "korean_name": "더뉴식스(旧名:티엔엑스)",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BLANK2Y",
+        "korean_name": "블랭키",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Lapillus",
+        "korean_name": "라필루스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Girl's World",
+        "korean_name": "소녀세상",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SUPERKIND",
+        "korean_name": "슈퍼카인드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "IRRIS",
+        "korean_name": "아이리스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NewJeans",
+        "korean_name": "뉴진스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ATBO",
+        "korean_name": "에이티비오",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CSR",
+        "korean_name": "첫사랑",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "&TEAM",
+        "korean_name": "앤팀",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "We;Na",
+        "korean_name": "위나",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "mimiirose",
+        "korean_name": "미미로즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PATTERN",
+        "korean_name": "패턴",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DIGNITY",
+        "korean_name": "디그니티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ABLUE",
+        "korean_name": "에이블루",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Queenz Eye",
+        "korean_name": "퀸즈아이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ARTBEAT v(旧名:ARTBEAT)",
+        "korean_name": "아트비트 브이(旧名:아트비트)",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "AIMERS",
+        "korean_name": "에이머스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "FIFTY FIFTY",
+        "korean_name": "피프티피프티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "WeNU",
+        "korean_name": "위앤유",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "XEED",
+        "korean_name": "씨드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PRIMROSE",
+        "korean_name": "프림로즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "MAVE:",
+        "korean_name": "메이브",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "8TURN",
+        "korean_name": "에잇턴",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BXB",
+        "korean_name": "비엑스비",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "tripleS",
+        "korean_name": "트리플에스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LIMELIGHT",
+        "korean_name": "라임라잇",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "HAWW",
+        "korean_name": "하우",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PLAVE",
+        "korean_name": "프레이브",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "xikers",
+        "korean_name": "싸이커스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "WE US",
+        "korean_name": "위어스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "X:IN",
+        "korean_name": "엑신",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "XODIAC",
+        "korean_name": "소디액",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "CMDM",
+        "korean_name": "커맨더맨",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ADYA",
+        "korean_name": "에이디야",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "FE:VERSE",
+        "korean_name": "피버스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "(M)IRROR",
+        "korean_name": "미러",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "The Wind",
+        "korean_name": "더윈드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BOYNEXTDOOR",
+        "korean_name": "보이넥스트도어",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "LUN8",
+        "korean_name": "루네이트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Bunny.T",
+        "korean_name": "바니티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "KISS OF LIFE",
+        "korean_name": "키스오브라이프",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ZEROBASEONE",
+        "korean_name": "제로베이스원",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SEVENUS",
+        "korean_name": "세븐어스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "n.SSign",
+        "korean_name": "엔싸인",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "RIIZE",
+        "korean_name": "라이즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "EL7Z UP",
+        "korean_name": "엘즈업",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Loossemble",
+        "korean_name": "루셈블",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "EVNNE",
+        "korean_name": "이븐",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "FANTASY BOYS",
+        "korean_name": "판타지보이즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TOZ",
+        "korean_name": "티오지",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "POW",
+        "korean_name": "파우",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "82MAJOR",
+        "korean_name": "에이티투메이저",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "YOUNG POSSE",
+        "korean_name": "영파씨",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "QWER",
+        "korean_name": "최애의 아이들",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Catch The Young",
+        "korean_name": "캐치더영",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "eite",
+        "korean_name": "에이트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "WHIB",
+        "korean_name": "휘브",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "AMPERS&ONE",
+        "korean_name": "앰퍼샌드원",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "EASTSHINE",
+        "korean_name": "이스트샤인",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BABYMONSTER",
+        "korean_name": "베이비몬스터",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ONE PACT",
+        "korean_name": "원팩트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Geenius",
+        "korean_name": "지니어스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "WAKER",
+        "korean_name": "웨이커",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ALL(H)OURS",
+        "korean_name": "올아워즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DXMON",
+        "korean_name": "다이몬",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TWS",
+        "korean_name": "투어스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NOMAD",
+        "korean_name": "노매드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ILLIT",
+        "korean_name": "아일릿",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "RESCENE",
+        "korean_name": "리센느",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "UNIS",
+        "korean_name": "유니스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "Candy Shop",
+        "korean_name": "캔디샵",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VVUP",
+        "korean_name": "비비업",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NOWADAYS",
+        "korean_name": "나우어데이즈",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "SPIA",
+        "korean_name": "수피아",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NCHIVE",
+        "korean_name": "엔카이브",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ViV",
+        "korean_name": "비브",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "UNICODE",
+        "korean_name": "유니코드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BEWAVE",
+        "korean_name": "비웨이브",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "TIOT",
+        "korean_name": "티아이오티",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "PICKUS",
+        "korean_name": "픽어스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DAYCHILD",
+        "korean_name": "데이차일드",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ASC2NT",
+        "korean_name": "아센트",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "For The More",
+        "korean_name": "포더모어",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "ARTMS",
+        "korean_name": "아르테미스",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "BADVILLAIN",
+        "korean_name": "배드빌런",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "DV.OL",
+        "korean_name": "다올",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "iii",
+        "korean_name": "아이아이아이",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "NXD",
+        "korean_name": "엔엑스디",
+        "japanese_name": ""
+    },
+    {
+        "non_korean_name": "VI'ENX",
+        "korean_name": "비엔엑스",
+        "japanese_name": ""
+    }
+]

@@ -1,0 +1,283 @@
+[
+    {
+        "artist_name": "NewJeans",
+        "artist_id": "6HvZYsbFfjnjFrWF950C9d",
+        "popularity": 79,
+        "songs": [
+            {
+                "song_name": "Super Shy",
+                "song_id": "5sdQOyqq2IDhvmx2lHOpwd",
+                "popularity": 83,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "OMG",
+                "song_id": "65FftemJ1DbbZ45DUfHJXE",
+                "popularity": 81,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "How Sweet",
+                "song_id": "38tXZcL1gZRfbqfOG0VMTH",
+                "popularity": 80,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Ditto",
+                "song_id": "3r8RuvgbX9s7ammBn07D3W",
+                "popularity": 80,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Hype Boy",
+                "song_id": "0a4MMyCrzT0En247IhqZbD",
+                "popularity": 80,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "ETA",
+                "song_id": "56v8WEnGzLByGsDAXDiv4d",
+                "popularity": 79,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "New Jeans",
+                "song_id": "6rdkCkjk6D12xRpdMXy0I2",
+                "popularity": 79,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Bubble Gum",
+                "song_id": "19D8LNpWwIPpi6hs9BG7dq",
+                "popularity": 78,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "GODS",
+                "song_id": "210JJAa9nJOgNa0YNrsT5g",
+                "popularity": 77,
+                "collaboration_artists": [
+                    "League of Legends"
+                ],
+                "video_links": []
+            },
+            {
+                "song_name": "Attention",
+                "song_id": "2pIUpMhHL6L9Z5lnKxJJr9",
+                "popularity": 77,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Cool With You",
+                "song_id": "02wk5BttM0QL38ERjLPQJB",
+                "popularity": 76,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Hurt",
+                "song_id": "5expoVGQPvXuwBBFuNGqBd",
+                "popularity": 74,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "ASAP",
+                "song_id": "5fpyAakgFOm4YTXkgfPzvV",
+                "popularity": 73,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Cookie",
+                "song_id": "2DwUdMJ5uxv20EhAildreg",
+                "popularity": 73,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Get Up",
+                "song_id": "1wUnuiXMMvhudmzvcCtlZP",
+                "popularity": 72,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Our Night is more beautiful than your Day",
+                "song_id": "11YovYUVkZdLyOFncbecWL",
+                "popularity": 66,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Zero",
+                "song_id": "5LMoKDVzW2kDneNu2UbspP",
+                "popularity": 66,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "How Sweet (Instrumental)",
+                "song_id": "54tBIDmNdxGp04gPNWCCbi",
+                "popularity": 65,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "New Jeans",
+                "song_id": "7woEDtme8YkFiWeyiinIjy",
+                "popularity": 63,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Super Shy",
+                "song_id": "0kwrPQkiGVE8KTHalH1uMo",
+                "popularity": 63,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Ditto",
+                "song_id": "5702raF31K9rvD6KZ6sCTo",
+                "popularity": 63,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Bubble Gum (Instrumental)",
+                "song_id": "54uNtM77iZ5gawWBQGnEar",
+                "popularity": 61,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Attention (250 Remix)",
+                "song_id": "2nW48vXnZZ5EYka46v7GOk",
+                "popularity": 59,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Beautiful Restriction",
+                "song_id": "7CHDUDw89DCR8vvI0yTXGa",
+                "popularity": 59,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Be Who You Are (Real Magic) (feat. JID, NewJeans & Camilo)",
+                "song_id": "7fcZk7OXeFWD7DWybltVVf",
+                "popularity": 58,
+                "collaboration_artists": [
+                    "Jon Batiste",
+                    "JID",
+                    "Camilo"
+                ],
+                "video_links": []
+            },
+            {
+                "song_name": "Ditto (250 Remix)",
+                "song_id": "6JVXVLqCPaodBSEwRFUN8w",
+                "popularity": 57,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "OMG (FRNK Remix)",
+                "song_id": "4yjDMKCAeLovlo9ih0AgXW",
+                "popularity": 56,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Hype Boy (250 Remix)",
+                "song_id": "6CUKsv928uT4561qJovhhG",
+                "popularity": 55,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Zero (J.I.D Remix)",
+                "song_id": "12Yy0hZrUebGnr3IrppPnW",
+                "popularity": 55,
+                "collaboration_artists": [
+                    "JID"
+                ],
+                "video_links": []
+            },
+            {
+                "song_name": "Hurt (250 Remix)",
+                "song_id": "2gWWYL6iXZKkOqCE3TQHBM",
+                "popularity": 54,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Cookie (FRNK Remix)",
+                "song_id": "5bwpbZBOY0mrmRhZ94c0kW",
+                "popularity": 53,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Attention (250 Remix) (Instrumental)",
+                "song_id": "4MhgDz4lSj2HtlUcpe3yrd",
+                "popularity": 52,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Ditto (250 Remix) (Instrumental)",
+                "song_id": "3dCCHYqCAMdm1GCuklUaZG",
+                "popularity": 49,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "OMG (FRNK Remix) (Instrumental)",
+                "song_id": "2oLVT9Lo0SavCNpGw4WfPp",
+                "popularity": 48,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Hype Boy (250 Remix) (Instrumental)",
+                "song_id": "6tU4EeTSSawN9sbfAjWPX4",
+                "popularity": 47,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Cookie (FRNK Remix) (Instrumental)",
+                "song_id": "2akxtSALPUX8orriSWyDi4",
+                "popularity": 47,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Hurt (250 Remix) (Instrumental)",
+                "song_id": "1q9V1vsIEehAm2hDT6l53g",
+                "popularity": 47,
+                "collaboration_artists": [],
+                "video_links": []
+            },
+            {
+                "song_name": "Our Night is more beautiful than your Day (Inst.)",
+                "song_id": "6sJ6EoG4vyUC1tW718ww7f",
+                "popularity": 39,
+                "collaboration_artists": [],
+                "video_links": []
+            }
+        ]
+    }
+]
