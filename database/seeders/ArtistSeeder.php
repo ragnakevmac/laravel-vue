@@ -23,7 +23,7 @@ class ArtistSeeder extends Seeder
 
         // Extract unique group or stage names
         $names = collect($data)->map(function ($idol) {
-            return $idol['Group'] ?: $idol['Stage Name'];
+            return $idol['artist_name'];
         })->unique();
 
         // Insert each name into the artists table

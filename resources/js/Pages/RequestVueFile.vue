@@ -1,24 +1,22 @@
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount, watch } from "vue";
+import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 import { useForm } from "@inertiajs/inertia-vue3";
 import { Inertia } from "@inertiajs/inertia";
-import axios from "axios";
-import { getSpotifyAccessToken } from "./spotifyAuth";
 
 const props = defineProps({
     requests: Array,
-    titles: Array,
+    titles: Array, // Include the titles prop
 });
 
 const form = useForm({
     comment: "",
-    artist_song_id: null,
+    artist_song_id: null, // Add artist_song_id field
 });
 
 const editForm = useForm({
     id: null,
     comment: "",
-    artist_song_id: null,
+    artist_song_id: null, // Add artist_song_id field
 });
 
 const showModal = ref(false);
@@ -26,100 +24,54 @@ const searchQuery = ref("");
 const editSearchQuery = ref("");
 const showSuggestions = ref(true);
 const showEditSuggestions = ref(true);
-const searchResults = ref([]);
-const editSearchResults = ref([]);
-let accessToken = ref("");
 
-async function fetchSpotifyData(query) {
-    if (!query || !accessToken.value) return [];
-    console.log("Fetching Spotify data for query:", query);
-    try {
-        const response = await axios.get(`https://api.spotify.com/v1/search`, {
-            params: {
-                q: query,
-                type: "track,artist",
-                limit: 5,
-            },
-            headers: {
-                Authorization: `Bearer ${accessToken.value}`,
-            },
-        });
-        console.log("Spotify API response:", response.data);
-        return response.data;
-    } catch (error) {
-        console.error("Error fetching data from Spotify API", {
-            message: error.message,
-            response: error.response ? error.response.data : null,
-        });
-        return [];
+const filteredSuggestions = computed(() => {
+    if (searchQuery.value) {
+        return props.titles.filter(title =>
+            title.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+        );
     }
-}
-
-watch(searchQuery, async (newQuery) => {
-    console.log("searchQuery changed:", newQuery);
-    if (newQuery) {
-        const data = await fetchSpotifyData(newQuery);
-        if (data && data.tracks && data.tracks.items) {
-            searchResults.value = data.tracks.items.map((item) => ({
-                id: item.id,
-                name: `${item.name} by ${item.artists.map((artist) => artist.name).join(", ")}`,
-                artist: item.artists[0].name,
-            }));
-        } else {
-            searchResults.value = [];
-        }
-    } else {
-        searchResults.value = [];
-    }
+    return [];
 });
 
-watch(editSearchQuery, async (newQuery) => {
-    console.log("editSearchQuery changed:", newQuery);
-    if (newQuery) {
-        const data = await fetchSpotifyData(newQuery);
-        if (data && data.tracks && data.tracks.items) {
-            editSearchResults.value = data.tracks.items.map((item) => ({
-                id: item.id,
-                name: `${item.name} by ${item.artists.map((artist) => artist.name).join(", ")}`,
-                artist: item.artists[0].name,
-            }));
-        } else {
-            editSearchResults.value = [];
-        }
-    } else {
-        editSearchResults.value = [];
+const filteredEditSuggestions = computed(() => {
+    if (editSearchQuery.value) {
+        return props.titles.filter(title =>
+            title.name.toLowerCase().includes(editSearchQuery.value.toLowerCase())
+        );
     }
+    return [];
 });
 
 function handleSuggestionClick(suggestion) {
     searchQuery.value = suggestion.name;
-    form.artist_song_id = suggestion.id;
+    form.artist_song_id = suggestion.id; // Set artist_song_id for form
     showSuggestions.value = false;
 }
 
 function handleEditSuggestionClick(suggestion) {
     editSearchQuery.value = suggestion.name;
-    editForm.artist_song_id = suggestion.id;
+    editForm.artist_song_id = suggestion.id; // Set artist_song_id for edit form
     showEditSuggestions.value = false;
 }
 
 function clearSearch() {
     searchQuery.value = "";
     showSuggestions.value = false;
-    form.artist_song_id = null;
+    form.artist_song_id = null; // Clear artist_song_id when search is cleared
 }
 
 function clearEditSearch() {
     editSearchQuery.value = "";
     showEditSuggestions.value = false;
-    editForm.artist_song_id = null;
+    editForm.artist_song_id = null; // Clear artist_song_id when search is cleared
 }
 
 function submit() {
     form.post("/requests", {
         onSuccess: () => {
             form.reset("comment");
-            form.artist_song_id = null;
+            form.artist_song_id = null; // Reset artist_song_id after submission
         },
     });
 }
@@ -139,7 +91,7 @@ function editComment(id) {
     editForm.id = id;
     editForm.comment = request.comment;
     editForm.artist_song_id = request.artist_song_id;
-    editSearchQuery.value = request.artist_song ? request.artist_song.songs.name : '';
+    editSearchQuery.value = request.artist_song ? request.artist_song.songs.name : ''; // Set initial search query in the edit form
     showModal.value = true;
 }
 
@@ -167,10 +119,8 @@ function handleClickOutside(event) {
     }
 }
 
-onMounted(async () => {
+onMounted(() => {
     document.addEventListener("click", handleClickOutside);
-    accessToken.value = await getSpotifyAccessToken();
-    console.log("Access token retrieved:", accessToken.value);
 });
 
 onBeforeUnmount(() => {
@@ -185,8 +135,8 @@ onBeforeUnmount(() => {
                 <input type="text" v-model="searchQuery" @focus="showSuggestions = true" class="search-box"
                     placeholder="Search for a song or artist..." />
                 <button type="button" class="clear-button" @click="clearSearch">×</button>
-                <ul v-if="searchQuery && showSuggestions && searchResults.length" class="suggestions-list">
-                    <li v-for="suggestion in searchResults" :key="suggestion.id"
+                <ul v-if="searchQuery && showSuggestions && filteredSuggestions.length" class="suggestions-list">
+                    <li v-for="suggestion in filteredSuggestions" :key="suggestion.id"
                         @click="handleSuggestionClick(suggestion)">
                         {{ suggestion.name }}
                     </li>
@@ -229,9 +179,9 @@ onBeforeUnmount(() => {
                         <input type="text" v-model="editSearchQuery" @focus="showEditSuggestions = true"
                             class="edit-search-box" placeholder="Search for a song or artist..." />
                         <button type="button" class="clear-button" @click="clearEditSearch">×</button>
-                        <ul v-if="editSearchQuery && showEditSuggestions && editSearchResults.length"
+                        <ul v-if="editSearchQuery && showEditSuggestions && filteredEditSuggestions.length"
                             class="suggestions-list">
-                            <li v-for="suggestion in editSearchResults" :key="suggestion.id"
+                            <li v-for="suggestion in filteredEditSuggestions" :key="suggestion.id"
                                 @click="handleEditSuggestionClick(suggestion)">
                                 {{ suggestion.name }}
                             </li>
@@ -251,9 +201,6 @@ onBeforeUnmount(() => {
         </div>
     </div>
 </template>
-
-
-
 
 
 <style scoped>

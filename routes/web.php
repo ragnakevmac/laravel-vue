@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
 use App\Http\Middleware\HandleInertiaRequests;
-use App\Http\Controllers\SpotifyController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -69,10 +68,5 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-
-
-Route::get('/spotify-token', [SpotifyController::class, 'getToken']);
-
 
 require __DIR__ . '/auth.php';
