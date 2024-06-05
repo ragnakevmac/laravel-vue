@@ -18,7 +18,6 @@ class SongFactory extends Factory
     {
         return [
             'name' => fake()->sentence(),
-            'popularity' => fake()->numberBetween(1, 100)
         ];
     }
 }

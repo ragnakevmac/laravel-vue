@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('popularity');
+            $table->string('name')->nullable();
+            $table->integer('popularity')->nullable()->change();
             $table->timestamps();
         });
     }
