@@ -35,7 +35,7 @@ class ArtistSeeder extends Seeder
         foreach ($artistsData as $artist) {
             DB::table('artists')->insert([
                 'name' => $artist['artist_name'],
-                'popularity' => $artist['popularity'],
+                'popularity' => (int) $artist['popularity'],
                 'created_at' => now(),
                 'updated_at' => now()
             ]);
@@ -43,33 +43,33 @@ class ArtistSeeder extends Seeder
             // Insert each song for the current artist into the songs table
             foreach ($artist['songs'] as $song) {
                 DB::table('songs')->insert([
-                    'artist_id' => $artist['artist_id'], // Assuming there's a foreign key to the artists table
-                    'song_name' => $song['song_name'],
-                    'song_id' => $song['song_id'],
-                    'popularity' => $song['popularity'],
+                    // 'artist_id' => $artist['artist_id'], // Assuming there's a foreign key to the artists table
+                    'name' => $song['song_name'],
+                    // 'song_id' => $song['song_id'],
+                    'popularity' => (int) $song['popularity'],
                     'created_at' => now(),
                     'updated_at' => now()
                 ]);
 
-                // Insert video links if needed
-                foreach ($song['video_links'] as $video_link) {
-                    DB::table('video_links')->insert([
-                        'song_id' => $song['song_id'],
-                        'link' => $video_link,
-                        'created_at' => now(),
-                        'updated_at' => now()
-                    ]);
-                }
+                // // Insert video links if needed
+                // foreach ($song['video_links'] as $video_link) {
+                //     DB::table('video_links')->insert([
+                //         'song_id' => $song['song_id'],
+                //         'link' => $video_link,
+                //         'created_at' => now(),
+                //         'updated_at' => now()
+                //     ]);
+                // }
 
-                // Insert collaboration artists if needed
-                foreach ($song['collaboration_artists'] as $collab_artist) {
-                    DB::table('collaboration_artists')->insert([
-                        'song_id' => $song['song_id'],
-                        'artist_name' => $collab_artist,
-                        'created_at' => now(),
-                        'updated_at' => now()
-                    ]);
-                }
+                // // Insert collaboration artists if needed
+                // foreach ($song['collaboration_artists'] as $collab_artist) {
+                //     DB::table('collaboration_artists')->insert([
+                //         'song_id' => $song['song_id'],
+                //         'artist_name' => $collab_artist,
+                //         'created_at' => now(),
+                //         'updated_at' => now()
+                //     ]);
+                // }
             }
         }
     }
