@@ -24,9 +24,12 @@ class DatabaseSeeder extends Seeder
 
         User::factory(10)->create();
         Dj::factory(5)->create();
-        // Artist::factory(30)->create();
-        Song::factory(100)->create();
-        ArtistSong::factory(15)->create();
+        // Call other seeders here
+        $this->call([
+            ArtistSeeder::class,
+            SongSeeder::class,
+            ArtistSongSeeder::class, // Ensure this is called after ArtistSeeder and SongSeeder
+        ]);
         Request::factory(15)->create();
 
         // User::factory()->create([
