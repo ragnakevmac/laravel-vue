@@ -6,12 +6,10 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
-class ArtistSongSeeder extends Seeder
+class SongSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
     public function run(): void
     {
@@ -24,14 +22,11 @@ class ArtistSongSeeder extends Seeder
 
             if ($artistId) {
                 foreach ($artist['songs'] as $song) {
-                    $songId = DB::table('songs')->where('spotify_id', $song['song_id'])->value('id');
-
-                    if ($songId) {
-                        DB::table('artist_song')->insert([
-                            'artist_id' => $artistId,
-                            'song_id' => $songId,
-                        ]);
-                    }
+                    DB::table('songs')->insert([
+                        'name' => $song['song_name'],
+                        'spotify_id' => $song['song_id'],
+                        'popularity' => $song['popularity'],
+                    ]);
                 }
             }
         }

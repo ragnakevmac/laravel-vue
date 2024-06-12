@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
+            $table->string('spotify_id');
             $table->integer('popularity')->nullable()->change();
             $table->timestamps();
         });

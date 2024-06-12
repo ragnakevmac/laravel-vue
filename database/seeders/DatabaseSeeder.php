@@ -20,21 +20,7 @@ class DatabaseSeeder extends Seeder
     {
 
         $this->call(ArtistSeeder::class);
-
-
-        User::factory(10)->create();
-        Dj::factory(5)->create();
-        // Call other seeders here
-        $this->call([
-            ArtistSeeder::class,
-            // SongSeeder::class,
-            ArtistSongSeeder::class, // Ensure this is called after ArtistSeeder and SongSeeder
-        ]);
-        Request::factory(15)->create();
-
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $this->call(SongSeeder::class);
+        $this->call(ArtistSongSeeder::class);
     }
 }
