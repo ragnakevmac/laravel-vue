@@ -83,6 +83,9 @@ class RequestController extends Controller
      */
     public function update(HttpRequest $apiRequest, string $id)
     {
+
+        #NOTE still cannot fix UPDATE bug!
+
         // Validate the incoming request
         $apiRequest->validate([
             'comment' => 'required',
