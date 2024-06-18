@@ -88,7 +88,7 @@ class RequestController extends Controller
 
         // Validate the incoming request
         $apiRequest->validate([
-            'comment' => 'required',
+            'comment' => 'nullable|string',
             'artist_song_id' => 'nullable|exists:artist_song,id',
         ]);
 
@@ -101,6 +101,7 @@ class RequestController extends Controller
 
         // Save the updated request
         $request->save();
+
 
         // Redirect back with a success message
         return redirect()->back()->with('success', 'Request updated.');
