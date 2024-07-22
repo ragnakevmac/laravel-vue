@@ -2,11 +2,15 @@
 import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 import { useForm } from "@inertiajs/inertia-vue3";
 import { Inertia } from "@inertiajs/inertia";
+import Axios from "axios";
+
 
 const props = defineProps({
     requests: Array,
     titles: Array, // Include the titles prop
 });
+
+const requests = ref([...props.requests]); // Create a reactive copy of the requests
 
 const form = useForm({
     comment: "",
@@ -68,44 +72,140 @@ function clearEditSearch() {
 }
 
 function submit() {
-    form.post("/requests", {
-        onSuccess: () => {
+    Axios.post("/requests", {
+        comment: form.comment,
+        artist_song_id: form.artist_song_id,
+    })
+        .then(response => {
+            console.log("Response data:", response.data); // Log the response data
+
+            // Find the artist song from props.titles using the artist_song_id
+            const artistSong = props.titles.find(title => title.id === response.data.artist_song_id);
+
+            // Split the name by " - " and assign to artist and song fields
+            let artistName = "";
+            let songName = "";
+            if (artistSong) {
+                const parts = artistSong.name.split(" - ");
+                artistName = parts[0] || "";
+                songName = parts[1] || "";
+            }
+
+            // Add the new request to the top of the local state with the artist song and artist name
+            const newRequest = {
+                ...response.data,
+                comment: form.comment, // Ensure comment is set
+                artist_song: artistSong ? {
+                    songs: { name: songName },
+                    artists: { name: artistName }
+                } : null
+            };
+
+            console.log("New request:", newRequest); // Log the new request
+
+            requests.value.unshift(newRequest);
+
             form.reset("comment");
             form.artist_song_id = null; // Reset artist_song_id after submission
-        },
-    });
+        })
+        .catch(error => {
+            console.error("There was an error submitting the form:", error);
+        });
 }
 
 function deleteComment(id) {
     if (confirm("Are you sure you want to delete this comment?")) {
-        Inertia.delete(`/requests/${id}`, {
-            onSuccess: () => {
+        Axios.delete(`/requests/${id}`)
+            .then(response => {
+                // Remove the deleted request from the local state
+                const index = requests.value.findIndex(request => request.id === id);
+                if (index !== -1) {
+                    requests.value.splice(index, 1);
+                }
                 console.log(`Comment with id ${id} deleted`);
-            },
-        });
+            })
+            .catch(error => {
+                console.error("There was an error deleting the comment:", error);
+            });
     }
 }
 
 function editComment(id) {
-    const request = props.requests.find(request => request.id === id);
+    const request = requests.value.find(request => request.id === id); // Use local requests array
+    console.log("Editing request:", request); // Log the request being edited
     editForm.id = id;
     editForm.comment = request.comment;
     editForm.artist_song_id = request.artist_song_id;
-    editSearchQuery.value = request.artist_song ? request.artist_song.songs.name : ''; // Set initial search query in the edit form
+    if (request.artist_song) {
+        const artistName = request.artist_song.artists.name;
+        const songName = request.artist_song.songs.name;
+        editSearchQuery.value = `${artistName} - ${songName}`; // Set initial search query in the edit form
+    } else {
+        editSearchQuery.value = '';
+    }
     showModal.value = true;
 }
 
 function updateComment() {
-    Inertia.put(`/requests/${editForm.id}`, {
+    console.log("Updating comment with ID:", editForm.id);
+    console.log("Comment:", editForm.comment);
+    console.log("Artist Song ID:", editForm.artist_song_id);
+
+    // Find the artist song ID from props.titles using the editSearchQuery if artist_song_id is undefined
+    let artistSongId = editForm.artist_song_id;
+    if (!artistSongId && editSearchQuery.value) {
+        const artistSong = props.titles.find(title => title.name.toLowerCase() === editSearchQuery.value.toLowerCase());
+        if (artistSong) {
+            artistSongId = artistSong.id;
+        }
+    }
+
+    Axios.put(`/requests/${editForm.id}`, {
         comment: editForm.comment,
-        artist_song_id: editForm.artist_song_id,
-    }, {
-        onSuccess: () => {
+        artist_song_id: artistSongId,
+    })
+        .then(response => {
+            // Find the artist song from props.titles using the artist_song_id
+            const artistSong = props.titles.find(title => title.id === artistSongId);
+
+            // Split the name by " - " and assign to artist and song fields
+            let artistName = "";
+            let songName = "";
+            if (artistSong) {
+                const parts = artistSong.name.split(" - ");
+                artistName = parts[0] || "";
+                songName = parts[1] || "";
+            }
+
+            // Update the local state with the updated comment and artist song details
+            const updatedRequest = {
+                id: editForm.id,
+                comment: editForm.comment,
+                artist_song: artistSong ? {
+                    songs: { name: songName },
+                    artists: { name: artistName }
+                } : null
+            };
+
+            // Find the index of the updated request in the local state
+            const index = requests.value.findIndex(request => request.id === editForm.id);
+            if (index !== -1) {
+                requests.value[index] = updatedRequest;
+            } else {
+                // If the request is not found, add it to the local state
+                requests.value.push(updatedRequest);
+            }
+
             showModal.value = false;
-            editForm.reset();
+            // Manually reset the fields
+            editForm.id = null;
+            editForm.comment = "";
+            editForm.artist_song_id = null;
             clearEditSearch();
-        },
-    });
+        })
+        .catch(error => {
+            console.error("There was an error updating the comment:", error);
+        });
 }
 
 function handleClickOutside(event) {

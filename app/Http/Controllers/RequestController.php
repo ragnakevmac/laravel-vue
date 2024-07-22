@@ -17,7 +17,7 @@ class RequestController extends Controller
      */
     public function index()
     {
-        $modelRequests = ModelRequest::with(['users', 'artist_song.songs', 'artist_song.artists'])->get();
+        $modelRequests = ModelRequest::with(['users', 'artist_song.songs', 'artist_song.artists'])->orderByDesc('created_at')->get();
 
         // Fetch all songs with artist names
         $titles = Song::join('artist_song', 'songs.id', '=', 'artist_song.song_id')
@@ -43,24 +43,17 @@ class RequestController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-
-
-    public function store(HttpRequest $apiRequest)
+    public function store(HttpRequest $request)
     {
-
-        $apiRequest->validate([
-            'comment' => 'nullable|string',
-            'artist_song_id' => 'nullable|exists:artist_song,id',
+        $validated = $request->validate([
+            'comment' => 'nullable|string', // Corrected 'null' to 'nullable'
+            'artist_song_id' => 'required|integer',
         ]);
 
-        ModelRequest::create([
-            'comment' => $apiRequest->comment,
-            'artist_song_id' => $apiRequest->artist_song_id,
-        ]);
+        $requestItem = ModelRequest::create($validated);
 
-        return redirect()->back()->with('success', 'Request posted.');
+        return response()->json($requestItem, 201);
     }
-
 
     /**
      * Display the specified resource.
@@ -81,41 +74,30 @@ class RequestController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(HttpRequest $apiRequest, string $id)
+    public function update(HttpRequest $request, string $id)
     {
-
-        #NOTE still cannot fix UPDATE bug!
-
-        // Validate the incoming request
-        $apiRequest->validate([
+        $validatedData = $request->validate([
             'comment' => 'nullable|string',
-            'artist_song_id' => 'nullable|exists:artist_song,id',
+            'artist_song_id' => 'required|integer',
         ]);
 
-        // Find the request by ID
-        $request = ModelRequest::findOrFail($id);
+        $requestItem = ModelRequest::findOrFail($id);
+        $requestItem->comment = $validatedData['comment'];
+        $requestItem->artist_song_id = $validatedData['artist_song_id'];
+        $requestItem->save();
 
-        // Update the request
-        $request->comment = $apiRequest->input('comment');
-        $request->artist_song_id = $apiRequest->input('artist_song_id'); // Update the artist_song_id
-
-        // Save the updated request
-        $request->save();
-
-
-        // Redirect back with a success message
-        return redirect()->back()->with('success', 'Request updated.');
+        return response()->json($requestItem);
     }
 
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        $comment = ModelRequest::findOrFail($id);
-        $comment->delete();
+        $requestItem = ModelRequest::findOrFail($id);
+        $requestItem->delete();
 
-        return redirect()->back()->with('success', 'Comment deleted.');
+        return response()->json(['message' => 'Request deleted successfully']);
     }
 }
